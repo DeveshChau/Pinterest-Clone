@@ -1,5 +1,8 @@
+<div class="col-md-6 col-md-offset-3">
 <h2><%= @pin.title %></h2>
 <h3><%= @pin.description %></h3>
+<h4><%= @pin.user.email %></h4>
 <%= link_to 'Back', root_path %>
 <%= link_to 'Edit', edit_pin_path(@pin) %>
 <%= link_to 'Delete', pin_path(@pin) ,method: :delete, data: {confirm: 'Are you Sure?'} %>
+</div>
